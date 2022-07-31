@@ -1,8 +1,3 @@
-set(LIB_SRC
-    skiplist.cc)
-
-add_library(skiplist_base ${LIB_SRC})
-
-set_target_properties(skiplist_base PROPERTIES OUTPUT_NAME "SkipList_base")
-
-add_subdirectory(tests)
+#libhello CMakeLists
+aux_source_directory(. DIR_LIB_SRCS)
+add_library(Skiplist_base ${DIR_LIB_SRCS})
